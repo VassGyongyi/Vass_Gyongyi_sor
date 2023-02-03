@@ -1,0 +1,141 @@
+*{box-sizing: border-box;
+  padding: 0;
+  margin: 0;  
+    font-family: Arial, Helvetica, sans-serif;
+    color: beige;
+    font-size: 10pt;
+    /* border: 1px solid white; */
+}
+
+.hatter{
+background-image:url(design/teglafal.jpg);
+position: absolute;
+    z-index: -1; 
+}
+
+main{
+    width: 80%;
+    max-width: 1000px;
+    height: auto;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    margin: 50px;
+    background-color: #333333;
+    box-shadow: 5px 5px 5px  5px #ccc5c5;
+    
+}
+.tarolo{
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr auto; 
+   
+   
+}
+article {
+    display: grid;
+    grid-template-columns: 1fr auto;
+   
+} 
+article img{
+    padding: 5px;
+    float: left;
+    width: 200px;
+    height: auto;
+    margin-right: 15px ;
+}
+article ul li{
+    list-style-type: square;
+}
+
+ header{
+    height: 300px;
+    background-size: cover;
+    font-weight: bold;
+    
+    font-size: 32px;
+    text-align: left;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    gap: 5px;
+    background-image: url(design/beer-new_401732638.jpg);
+   
+ }
+ 
+ header h1{
+    text-transform: uppercase;
+  
+    font-family: Garamond;
+    font-size: 32px;
+    letter-spacing: 4px;
+    margin: 20px;
+       
+ }
+ .container h1{
+    margin: 10px;
+    text-transform: uppercase;
+ }
+ nav{
+    min-width: 150px;
+ }
+ nav ul li{
+    text-decoration: none;
+    list-style-type: none;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+ }
+ a{
+ text-decoration: none;
+ color: red;
+ font-weight: bold;
+ }
+ a:hover{
+  color: whitesmoke;  
+ }
+ article ul{
+    margin: 20px;
+ }
+ footer{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 20px;
+    background-color: rgb(80, 78, 78);
+
+ }
+
+ .tablazat{
+    overflow-x:auto;
+ }
+
+
+table{
+    overflow-x: auto;
+    margin: 15px;
+
+    border-collapse: collapse;
+    width: 70%;
+    overflow-x: auto;
+    
+}
+td, th{
+border: 1px solid #ddd;
+padding: 10px;
+}
+th{
+    padding: 10px;
+}
+
+table tr:nth-child(even){background-color: #534646;}
+table tr:hover {background-color: rgb(167, 110, 110);}
+ @media screen and (max-width: 700px) {
+    main{
+       
+        grid-template-columns: 1fr;
+    }
+    .tarolo, article{
+        grid-template-columns: 1fr;
+    }
+}
